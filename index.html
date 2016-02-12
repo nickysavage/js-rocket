@@ -5,7 +5,7 @@
 	<script type="text/javascript">
 		var car = {
 			make: 'VW',
-			type: 'Polo'
+			type: 'Polo',
 			color: 'blue',
 			isTurnedOn: false,
 			numberOfWheels: 4,
@@ -14,7 +14,13 @@
 				'seat 2',
 				'seat 3', 
 				'seat 4'
-			]
+			],
+			turnOn: function () {
+				this.isTurnedOn = true;
+			},
+			fly: function () {
+				alert("fly");
+			},
 		};
 
 		console.log('hello there friends!');
