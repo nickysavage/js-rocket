@@ -1,5 +1,13 @@
+// this function does this.
 var doCoolStuff = function () {
-	document.getElementById('cool').className = 'cool red';
+	var currentClassName = document.getElementById('cool').className;
+
+	//changing className
+	if (currentClassName == 'cool') {
+		document.getElementById('cool').className = 'cool red';
+	} else {
+		document.getElementById('cool').className = 'cool';
+	}
 }
 
 var sayMyName = function (name) {
